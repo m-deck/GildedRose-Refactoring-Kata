@@ -10,5 +10,9 @@ class GildedRoseTest(unittest.TestCase):
         gilded_rose.update_quality()
         self.assertEquals("fixme", items[0].name)
 
+    def test_quality_max(self):
+        items = [Item("anyitem", 0, 90)]
+        self.assertEquals(50, items[0].quality)
+
 if __name__ == '__main__':
     unittest.main()
