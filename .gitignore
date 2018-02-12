@@ -2,3 +2,5 @@
 *.pyc
 /perl6/lib/.precomp
 /elixir/_build/
+.cache
+*.swp
